@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PLACEHOLDER MAP — replace with a real export from Tiled (https://www.mapeditor.org)
+
+  HOW TO REPLACE THIS FILE WITH A REAL MAP:
+  1. Open Tiled and create a new map:
+       - Orientation: Orthogonal
+       - Tile layer format: CSV (easiest for source control)
+       - Tile size: 32×32 px  (must match destTileSize in TiledComponent.load)
+       - Map size: e.g. 40×25 tiles  (= 1280×800 logical px at 32 px/tile)
+  2. Import your tileset PNG (File → New Tileset → Based on Tileset Image).
+       - Save the .tsx alongside this .tmx in assets/tiles/.
+  3. Paint ground, obstacle, and decoration layers.
+  4. Add an Object Layer named "Spawns" and place a Point object named
+       "PlayerSpawn" where the player should start.
+  5. Export / Save As → "World1_Jungle.tmx" into assets/tiles/.
+  6. Ensure every tileset PNG is also listed under assets/tiles/ in pubspec.yaml.
+  7. Hot-restart the app — TiledComponent.load() will pick up the new map
+       automatically; the procedural fallback in GameWorld will be skipped.
+
+  The map below is the minimal valid TMX structure so the app compiles and
+  the fallback path is exercised during development.
+-->
+<map version="1.10" tiledversion="1.10.2"
+     orientation="orthogonal" renderorder="right-down"
+     width="40" height="25" tilewidth="32" tileheight="32"
+     infinite="0" nextlayerid="2" nextobjectid="1">
+</map>
